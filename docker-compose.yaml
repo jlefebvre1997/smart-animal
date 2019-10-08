@@ -1,0 +1,11 @@
+version: '3.2'
+
+services:
+  node:
+    image: node:lts-alpine
+    volumes:
+      - '.:/src'
+    ports:
+      - '8080:8080'
+    working_dir: /src
+    command: npm run serve
