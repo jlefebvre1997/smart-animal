@@ -13,6 +13,12 @@ export default {
   name: 'home',
   components: {
     HelloWorld
+  },
+  props: {
+    coucou: String,
+  },
+  mounted() {
+
   }
 }
 </script>
