@@ -1,24 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home container">
+    <Actu />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Actu from "../components/Actu";
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    HelloWorld
-  },
-  props: {
-    coucou: String,
-  },
-  mounted() {
-
+    Actu
   }
-}
+};
 </script>
+
+<style lang="scss">
+.home {
+  margin-top: 2%;
+}
+</style>
