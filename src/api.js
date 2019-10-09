@@ -14,9 +14,9 @@ export default {
   },
 
   getAnimal() {
-    axios.get('https://some-random-api.ml/img/dog').then(response => {
-      const animal = response.data.link;
-      localStorage.animal = JSON.stringify(animal);
+    axios.get('https://dog.ceo/api/breeds/image/random').then(response => {
+      const animal = response.data.message;
+      localStorage.animal = animal;
     });
   }
 };
